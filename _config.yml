@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: '/web-preview'
 theme: jekyll-theme-minimal
 title: OSG
 description: A national, distributed computing partnership for data-intensive research
