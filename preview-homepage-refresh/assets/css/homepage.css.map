@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "homepage.css",
+	"sources": [
+		"homepage.scss"
+	],
+	"sourcesContent": [
+		"#homepage-heading {\n  height: 115vh;\n}\n\n#hero-image {\n  position: absolute;\n  height: 115vh;\n  width: 100%;\n  top: 0px;\n  z-index: -1;\n  background: url(\"/assets/images/OSG_Hero.svg\") no-repeat center;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  -o-background-size: cover;\n  background-size: cover;\n}\n\n#hero-content-container {\n  background-color: rgba(0, 0, 0, .6);\n  border-radius: 5px;\n  min-height: 300px;\n  color: white;\n  p {\n    min-height: 150px;\n  }\n}\n\n#hero-quote{\n\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,iBAAiB,AAAC,CAChB,MAAM,CAAE,KAAK,CACd,AAED,AAAA,WAAW,AAAC,CACV,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,KAAK,CACb,KAAK,CAAE,IAAI,CACX,GAAG,CAAE,GAAG,CACR,OAAO,CAAE,EAAE,CACX,UAAU,CAAE,kCAAkC,CAAC,SAAS,CAAC,MAAM,CAC/D,uBAAuB,CAAE,KAAK,CAC9B,oBAAoB,CAAE,KAAK,CAC3B,kBAAkB,CAAE,KAAK,CACzB,eAAe,CAAE,KAAK,CACvB,AAED,AAAA,uBAAuB,AAAC,CACtB,gBAAgB,CAAE,eAAiB,CACnC,aAAa,CAAE,GAAG,CAClB,UAAU,CAAE,KAAK,CACjB,KAAK,CAAE,KAAK,CAIb,AARD,AAKE,uBALqB,CAKrB,CAAC,AAAC,CACA,UAAU,CAAE,KAAK,CAClB"
+}
