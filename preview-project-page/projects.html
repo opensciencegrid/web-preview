@@ -36,11 +36,11 @@
 
 <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js" type="text/javascript" ></script>
 
-<script src="https://unpkg.com/lunr/lunr.js" type="text/javascript" ></script>
-
 <script src="/web-preview/preview-project-page/assets/js/project-page.js" type="text/javascript" defer></script>
 
 
+
+<link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" media="screen, tv, projection" title="Default" rel="stylesheet">
 
   </head>
   <body>
@@ -91,14 +91,20 @@
                             
                         </div>
                     </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Researchers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="userDropdown">
+                            <a class="dropdown-item"  href="/web-preview/preview-project-page/projects.html">Projects</a>
+                            <a class="dropdown-item" href="/web-preview/preview-project-page/spotlight.html">Spotlight Articles</a>
+                        </div>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/web-preview/preview-project-page/campus-cyberinfrastructure.html">CC*</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/web-preview/preview-project-page/news.html">News</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/web-preview/preview-project-page/spotlight.html">Spotlight</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/web-preview/preview-project-page/events.html">Events</a>
@@ -136,10 +142,7 @@
         </div>
     </div>
 </div>
-<div class="container-xxl py-2">
-    <input id="project-search" type="search"/>
-</div>
-<div id="project-display"  class="bg-light py-2"  hidden>
+<div id="project-display"  class="bg-light py-2 my-2"  hidden>
     <div class="container-xxl">
         <div class="card">
             <div class="card-body">
