@@ -20,7 +20,7 @@ const ProjectPage = () => {
             name: 'Field Of Science'
         }
     ]
-    this.build_table = (data) => {
+    this.build_table = () => {
         this.grid =  new gridjs.Grid({
             columns: columns,
             sort: true,
@@ -30,7 +30,7 @@ const ProjectPage = () => {
                 table: "table-hover table table-responsive",
                 td: "pointer"
             },
-            data: data,
+            data: this.load_projects,
             pagination: {
                 enabled: true,
                 limit: 50,
@@ -93,13 +93,10 @@ const ProjectPage = () => {
 
         this.projects = json
 
-        let data = Object.values(json)
-
-
-        this.build_table(data)
+        return Object.values(json)
     }
     this.initialize = () => {
-        this.load_projects()
+        this.build_table()
     }
 
     this.initialize()
