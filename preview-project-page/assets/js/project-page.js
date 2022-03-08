@@ -201,7 +201,7 @@ class ProjectPage{
         this.initialize()
     }
     initialize = async () => {
-        await this.update_width()
+        await this.update_width() // update_width ~= initialize based on width
     }
     get_data = async () => {
 
