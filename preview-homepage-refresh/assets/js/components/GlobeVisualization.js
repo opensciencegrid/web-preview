@@ -20,7 +20,7 @@ class GlobeVisualization {
         this.frame_generator = this.globe()
         this.topo = await this.get_topo("110")
         this.create_frame()
-        fetch("/assets/data/job_lines.json").then(d => d.json()).then(d => this.data = d)
+        fetch("/web-preview/preview-homepage-refresh/assets/data/job_lines.json").then(d => d.json()).then(d => this.data = d)
         this.get_topo("50").then(d => this.topo = d)
     }
 
@@ -96,7 +96,7 @@ class GlobeVisualization {
     sphere = {type: "Sphere"}
 
     get_topo = async (resolution) => {
-        return await fetch(`/assets/data/land-${resolution}m.json`).then(t => t.json()).then(j => topojson.feature(j, j.objects.land))
+        return await fetch(`/web-preview/preview-homepage-refresh/assets/data/land-${resolution}m.json`).then(t => t.json()).then(j => topojson.feature(j, j.objects.land))
     }
 }
 
